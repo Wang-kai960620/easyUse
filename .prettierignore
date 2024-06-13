@@ -1,0 +1,8 @@
+package.json
+/dist
+.DS_Store
+.eslintignore
+*.png
+.editorconfig
+.gitignore
+.prettierignore

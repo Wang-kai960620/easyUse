@@ -1,5 +1,5 @@
-import React, {memo} from "react";
+import { memo } from "react";
 
-export const Page = memo(()=>{
-    return <div>Page</div>
-})
+export const Page = memo(() => {
+  return <div>Page</div>;
+});
