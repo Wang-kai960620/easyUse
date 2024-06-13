@@ -7,6 +7,11 @@
       "dom",
       "esnext"
     ],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+    },
     "baseUrl": ".",
     "sourceMap": true, // ts中启用source-map必须配置
     "allowJs": true, // 也允许写js文件
@@ -22,7 +27,7 @@
     "resolveJsonModule": true,
     "incremental": true,
     "isolatedModules": true,
-    "jsx": "react"
+    "jsx": "react-jsx"
   },
   "ts-node": { // ts-node对module的重载 后面会讲到
     "compilerOptions": {

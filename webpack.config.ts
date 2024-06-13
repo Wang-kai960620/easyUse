@@ -23,6 +23,9 @@ module.exports = {
         app: resolve(__dirname, 'src/app.tsx'),
     },
     resolve: {
+        alias: {
+            '@':resolve(__dirname, 'src')
+        },
         extensions: [ '.ts', '.tsx' , '.js','.jsx', '.less', '.css' ],
     },
     output: {
