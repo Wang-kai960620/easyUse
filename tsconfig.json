@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "noEmit": true,     // 只做静态类型 不编译内容
+    "module": "esnext",
+    "target": "es5",
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "baseUrl": ".",
+    "sourceMap": true, // ts中启用source-map必须配置
+    "allowJs": true, // 也允许写js文件
+    "checkJs": true, // 允许对js文件做检查
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "incremental": true,
+    "isolatedModules": true,
+    "jsx": "react"
+  },
+  "ts-node": { // ts-node对module的重载 后面会讲到
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  },
+  // 起作用的范围
+  "include": [
+    "src/**/*",
+  ],
+  // 排除哪些
+  "exclude": [
+    "node_modules",
+    "build",
+    "dist",
+    "scripts",
+  ]
+}
