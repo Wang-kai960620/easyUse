@@ -1,5 +1,17 @@
-import { memo } from "react";
+import React, { memo } from "react";
+import { sum } from "./service";
 
 export const Page = memo(() => {
-  return <div>Page</div>;
+  const number = sum(1, 2);
+
+  const handleClick = () => {
+    console.log("加一");
+  };
+
+  return (
+    <div>
+      <div>sumResult : {number}</div>
+      <button onClick={handleClick}>加一</button>
+    </div>
+  );
 });
